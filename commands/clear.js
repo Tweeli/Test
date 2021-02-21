@@ -2,11 +2,20 @@ const discord = require("discord.js");
 
 module.exports.run = async(bot, message, args) => {
 
-        if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("Jij kan deze command niet gebruiken.");
-        if(!args[0]) return message.channel.send("Zet erbij hoeveel berichten je wil gebruiken.");
-        message.delete();
-        message.channel.bulkDelete(args[0]).catch(e => { message.channel.send("Het maximum berichten dat je kan deleten is 100.")});
-        message.channel.send(`Het deleten is gelukt! \`${args[0]} messages\``).then(m => m.delete({ timeout: 5000 }));
+    if (!message.member.permissions.has("MANAGE_MESSAGES")) return message.channel.send('Lack of Perms!');
+    
+    let deleteAmount;
+
+    if (isNaN(args[0]) || parseInt(args[0]) <= 0) { return message.reply('Please put a number only!') }
+
+    if (parseInt(args[0]) > 100) {
+        return message.reply('You can only delete 100 messages at a time!')
+    } else {
+        deleteAmount = parseInt(args[0]);
+    }
+
+    message.channel.bulkDelete(deleteAmount + 1, true);
+    message.reply(`**Successfully** Deleted ***${deleteAmount}*** Messages.`)
 
 }
 
