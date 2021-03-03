@@ -7,12 +7,12 @@ module.exports.run = async(discordBot, message, args) => {
     var result = value[Math.floor(Math.random() * value.length)];
 
     var resultEmbed = new discord.MessageEmbed()
-        .setDescription(`:coin: En het is geworden... ${result}!!!!`)
-        .setColor("#E67E22")
+        .setDescription(`:coin: En het is geworden... ${result}!`)
+        .setColor("#7bb54e")
     message.channel.send(resultEmbed)
 }
 
 module.exports.help = {
-    name: "kop_of_munt",
+    name: "kom",
     aliases: ["kom", "kopofmunt"]
 } 
