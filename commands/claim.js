@@ -2,8 +2,6 @@ const discord = require("discord.js");
 
 module.exports.run = async(discordBot, message, args) => {
 
-    var member = message.guild.member(message.mentions.users.first() || discordBot.users.cache.get(args[0]));
-    if(!member) member = message.member;
 
     var avatarEmbed = new discord.MessageEmbed()
         .setDescription(`Dit ticket is geclaimd door ${member.user.tag}. Niemand van het staff-team mar hier nog in praten zonder de toestemming van ${member.user.tag}`)
