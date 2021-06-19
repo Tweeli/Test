@@ -9,6 +9,7 @@ module.exports.run = async(discordBot, message, args) => {
     var resultEmbed = new discord.MessageEmbed()
         .setDescription(`:coin: En het is geworden... ${result}!`)
         .setColor("#7bb54e")
+        .setFooter('Created by Tweeli.#5298')
     message.channel.send(resultEmbed)
 }
 
