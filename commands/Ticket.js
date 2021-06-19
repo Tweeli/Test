@@ -54,7 +54,8 @@ module.exports.run = async (client, message, args) => {
                     var embedParent = new discord.MessageEmbed()
                         .setTitle(`Hoi ${message.author.username}`)
                         .setDescription("Het support team komt er zo snel mogelijk aan! \n Zeg hier alvast je vraag.")
-                        .setFooter('Created by Tweeli.#5298');
+                        .setFooter('Created by Tweeli.#5298')
+                        message.reply("• Tweeli. •#0001");
                     settedParent.send(embedParent);
 
                     
