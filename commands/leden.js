@@ -12,7 +12,7 @@ module.exports.run = async (client, message, args) => {
         .setColor("#00FF00")
         .addField("Leden", ledenTotal, true)
         .addField("Bots", bots, true)
-        .addField("Mensen", people, true)
+        .addField("Mens(en)", people, true)
         .addField("Online", online, true);
 
     message.channel.send(ledenEmbed);
