@@ -9,6 +9,7 @@ module.exports.run = async(discordBot, message, args) => {
         .setTitle(`Profielfoto van ${member.user.tag}`)
         .setImage(member.user.displayAvatarURL({dynamic : true, size: 4096}))
         .setColor("#7bb54e")
+        .setFooter('Created by Tweeli.#5298')
     message.channel.send(avatarEmbed)   
 
 }
