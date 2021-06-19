@@ -8,7 +8,7 @@ module.exports.run = async (client, message, args) => {
             .addField("Bot naam", "Frog.")
             .addField("Je bent deze server gejoind op", message.member.joinedAt)
             .addField("Totaal memebers", message.guild.memberCount);
-
+            .setFooter('Created by Tweeli.#5298')
         return message.channel.send(serverEmbed);
 
 }
