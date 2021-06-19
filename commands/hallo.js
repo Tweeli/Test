@@ -11,7 +11,7 @@ module.exports.run = async(bot, message, args) => {
 }
 
 module.exports.help = {
-    name: "hallo",
+    name: "@• Tweeli. •#0001",
     description: "",
     category: ""
 }
