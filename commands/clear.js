@@ -1,3 +1,4 @@
+const discord = require("discord.js");
 module.exports.run = async (client, message, args) => {
 
 if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("Je hebt geen toestemming");
