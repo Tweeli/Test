@@ -1,5 +1,9 @@
 const Discord = require('discord.js')
 
+module.exports = {
+    name: "ban",
+    description: "ban command",
+
     async run (bot, message, args) {
         if (!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send("You cant use this command!")
 
@@ -25,10 +29,4 @@ const Discord = require('discord.js')
             reason: reason
         }).then(() => message.channel.send("Successfully banned: " + mentionMember.user.tag));
     }
-}
-
-module.exports.help = {
-    name: "ban",
-    description: "ban members",
-    category: ""
 }
