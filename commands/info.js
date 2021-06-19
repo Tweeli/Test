@@ -4,8 +4,8 @@ const discord = require("discord.js");
 module.exports.run = async (bot, message, args) => {
 
     var botEmbed = new discord.MessageEmbed()
-            .setTitle('Een titel')
-            .setDescription("Zet de beschrijving")
+            .setTitle('**FROG.**')
+            .setDescription("Deze bot is gemaakt door: Tweeli.")
             .setColor("#0099ff")
             .addField("Bot naam", client.user.username)
 
