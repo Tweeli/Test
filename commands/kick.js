@@ -121,7 +121,7 @@ const filter = (reaction, user) => reactions.includes(reaction.emoji.name) && us
     return message.awaitReactions(filter, { max: 1, time: time }).then(collected => collected.first() && collected.first().emoji.name);
 }
  
-            }
+            
  
         });
     }
