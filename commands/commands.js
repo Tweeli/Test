@@ -4,7 +4,7 @@ module.exports.run = async(bot, message, args) => {
 
 try{
 
-   var text = "**Tweeli.#5298** \n\n *commands:* \n >hallo - Zegt hallo terug. \n >botinfo - Info over de bot. \n >ping - Zegt hoeveel ping je hebt. \n >leden - Zegt hoeveel leden er op dat moment in de server zitten. \n >ticket - Je maakt een ticket aan. \n >serverinfo - Geeft info weer van de server.";
+   var text = "**Tweeli.#5298** \n\n *Frog. commands:* \n > !Hallo - Zegt hallo terug. \n > !Botinfo - Geeft info weer over de bot. \n > !Ping - Geeft weer hoeveel ping je hebt op dat moment.";
 
    message.author.send(text);
 
